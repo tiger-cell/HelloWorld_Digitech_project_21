@@ -15,10 +15,10 @@
         </Grid.RowDefinitions>
         <StackPanel Orientation="Vertical">
             <Hub Header = "Menu" Grid.RowSpan="2" Width="1221"/>
-            <TextBlock x:Name="Welcome_Text" Margin="50, 50, 50, 150" FontSize="24" Style="{ThemeResource BaseTextBlockStyle}" Height="198" Width="1229" >
+            <TextBlock x:Name="Welcome_Text" Margin="0, 50, 50, 150" FontSize="24" Style="{ThemeResource BaseTextBlockStyle}" Height="242" Width="1089" >
            Welcome! This application is designed to improve your productivity while using your PC.
             
-            Use the Notes page to svae any ideas or comments you think of, so that you can come back to them later.
+            Use the Notes page to save any ideas or comments you think of, so that you can come back to them later.
             
             Use the To-Do page to save a checklist of the tasks you have to do.
             </TextBlock>
