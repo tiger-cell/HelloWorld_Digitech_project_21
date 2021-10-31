@@ -1,0 +1,9 @@
+﻿<Application
+    x:Class="HelloWorld.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloWorld"
+    RequestedTheme="Light">
+    <!-- for apps that mostly display images or video, we recommend the dark theme;
+    for apps that contain a lot of text, we recommend the light theme.-->
+</Application>
