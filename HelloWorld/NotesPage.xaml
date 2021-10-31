@@ -21,7 +21,7 @@
                 <Button x:Name="NewFile" Margin="0,20,0,0" VerticalAlignment="Top" Height="48" Width="186" Content="Create new file" FontSize="24" Style="{ThemeResource AccentButtonStyle}" Click="CreateFileButton_Click"/>
                 <Button x:Name="LoadFile" Margin="10,20,0,0" VerticalAlignment="Top" Height="48" Width="242" Content="Load Previous note" FontSize="24" Style="{ThemeResource AccentButtonStyle}" Click="LoadNotesFile"/>
             </StackPanel>
-            <TextBlock x:Name="notesDisplayText" VerticalAlignment="Top" Height="40"/>
+            <TextBlock x:Name="notesDisplayText" VerticalAlignment="Top" Height="60"/>
 
             <ScrollViewer HorizontalAlignment="Left" Height="292" Width="838">
                 <StackPanel Height="263" Width="530">

@@ -25,14 +25,3 @@ BlankPage::BlankPage()
 {
 	InitializeComponent();
 }
-
-void HelloWorld::BlankPage::Button_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
-{
-	// MessageDialog msgDlg(L"Button Click Event", L"C++/UWP");
-
-}
-
-void HelloWorld::BlankPage::Button_Click_1(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
-{
-	// Nil
-}

@@ -43,5 +43,5 @@ void HelloWorld::ToDoPage::CreateFileButton_Click(Platform::Object^ sender, Wind
 
 void HelloWorld::ToDoPage::LoadToDoFile(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-
+    itemInput->Text = librarytd.LoadPrevSetting("datatd")->ToString();
 }

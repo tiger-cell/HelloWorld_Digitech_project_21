@@ -13,8 +13,15 @@
             <RowDefinition Height="509*"/>
             <RowDefinition Height="492*"/>
         </Grid.RowDefinitions>
-        <Hub Header = "Menu" Grid.RowSpan="2"/>
-        <Button Content = "Button 1" Margin = "64,102,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <Button Content = "Button 2" Margin = "64,163,0,0" Click = "Button_Click_1" VerticalAlignment="Top"/>
+        <StackPanel Orientation="Vertical">
+            <Hub Header = "Menu" Grid.RowSpan="2" Width="1221"/>
+            <TextBlock x:Name="Welcome_Text" Margin="50, 50, 50, 150" FontSize="24" Style="{ThemeResource BaseTextBlockStyle}" Height="198" Width="1229" >
+           Welcome! This application is designed to improve your productivity while using your PC.
+            
+            Use the Notes page to svae any ideas or comments you think of, so that you can come back to them later.
+            
+            Use the To-Do page to save a checklist of the tasks you have to do.
+            </TextBlock>
+        </StackPanel>
     </Grid>
 </Page>
