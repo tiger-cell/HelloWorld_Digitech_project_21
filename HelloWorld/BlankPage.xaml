@@ -15,7 +15,10 @@
         </Grid.RowDefinitions>
         <StackPanel Orientation="Vertical">
             <Hub Header = "Menu" Grid.RowSpan="2" Width="1221"/>
-            <TextBlock x:Name="Welcome_Text" Margin="0, 50, 50, 150" FontSize="24" Style="{ThemeResource BaseTextBlockStyle}" Height="242" Width="1089" >
+            <TextBlock x:Name="Welcome_Text" Margin="0, 50, 50, 150" FontSize="24" Style="{ThemeResource BaseTextBlockStyle}" Height="190" Width="877" RenderTransformOrigin="0.5,0.5" >
+                <TextBlock.RenderTransform>
+                    <CompositeTransform TranslateX="-20"/>
+                </TextBlock.RenderTransform>
            Welcome! This application is designed to improve your productivity while using your PC.
             
             Use the Notes page to save any ideas or comments you think of, so that you can come back to them later.

@@ -1,6 +1,8 @@
 #include "pch.h"
 #include "Library.h"
 #include <sstream>
+#include <vector>
+#include <string>
 
 using namespace Windows::Storage;
 
@@ -9,8 +11,10 @@ Library::Library()
 	/*if (ApplicationData::Current->LocalSettings->Values->HasKey("nDataItems")) {
 		Library::numI = ApplicationData::Current->LocalSettings->Values->Lookup("nDataItems");
 	}*/
-	Library::numItems = 1; // Because of this code it is overwriting all the other saved values :(
+	Library::numItems = 1; // Because of this code it was overwriting all the other saved values :(
 	Library::cursorPos = 1;
+
+	Library::recordings;
 }
 
 Platform::Object ^ Library::LoadSettings(Platform::String^ keyLoad, int num) {

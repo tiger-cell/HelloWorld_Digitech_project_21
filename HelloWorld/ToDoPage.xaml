@@ -22,7 +22,7 @@
                 <TextBox x:Name="itemInput" Margin="0,0,00,0" FontSize="24" Height="100" AcceptsReturn="False" Width="354" Padding="0,0,0,6"/>
                 <StackPanel Orientation="Horizontal">
                     <Button x:Name="NewItem" Margin="0,20,0,0" VerticalAlignment="Top" Height="48" Width="140" Content="Add Item" FontSize="24" Click="CreateFileButton_Click"/>
-                    <Button x:Name="LoadItem" Margin="10,20,0,0" VerticalAlignment="Top" Height="48" Width="203" Content="Load Previous Item" FontSize="24" Click="LoadToDoFile"/>
+                    <Button x:Name="LoadItem" Margin="10,20,0,0" VerticalAlignment="Top" Height="48" Width="203" Content="Load Previous Item" FontSize="22" Click="LoadToDoFile"/>
                 </StackPanel>
             </StackPanel>
             <ScrollViewer Height="660" Width="400" RenderTransformOrigin="0.5,0.5">
@@ -30,20 +30,23 @@
                     <CompositeTransform TranslateX="150"/>
                 </ScrollViewer.RenderTransform>
                 <StackPanel Height="500" Width="400">
-                    <ListView x:Name="LBBottomList" SelectionMode="None" Height="500" BorderThickness="2" BorderBrush="Black" Width="400">
+                    <ListView x:Name="LBBottomList" SelectionMode="None" CanDragItems="True" Height="500" BorderThickness="2" BorderBrush="Black" Width="400">
                         <ListView.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <ItemsStackPanel ItemsUpdatingScrollMode="KeepItemsInView" VerticalAlignment="Bottom"/>
                             </ItemsPanelTemplate>
                         </ListView.ItemsPanel>
-                        <ListView.ItemTemplate>
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="CheckBox"/>
+                        </ListView.ItemContainerStyle>
+                        <!--<ListView.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                                    <TextBlock x:Name="Content"/>
                                     <CheckBox x:Name="checkbox" Content=""/>
+                                    <TextBlock x:Name="Content" />
                                 </StackPanel>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
+                        </ListView.ItemTemplate>-->
                     </ListView>
                 </StackPanel>
             </ScrollViewer>

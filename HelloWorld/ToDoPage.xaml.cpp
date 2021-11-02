@@ -5,6 +5,7 @@
 
 #include "pch.h"
 #include "ToDoPage.xaml.h"
+#include <vector>
 
 using namespace HelloWorld;
 
@@ -34,6 +35,8 @@ ToDoPage::ToDoPage()
     librarytd.numItems = num;
     librarytd.cursorPos = num;
 }
+
+
 
 void HelloWorld::ToDoPage::CreateFileButton_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {

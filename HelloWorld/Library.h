@@ -7,6 +7,7 @@ private:
 public:
 	int numItems;
 	int cursorPos;
+	std::vector<std::string> recordings;
 	Library();
 
 	Platform::Object ^ LoadSettings(Platform::String ^ keyLoad, int num);
