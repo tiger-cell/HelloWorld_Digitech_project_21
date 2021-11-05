@@ -30,23 +30,18 @@
                     <CompositeTransform TranslateX="150"/>
                 </ScrollViewer.RenderTransform>
                 <StackPanel Height="500" Width="400">
-                    <ListView x:Name="LBBottomList" SelectionMode="None" CanDragItems="True" Height="500" BorderThickness="2" BorderBrush="Black" Width="400">
+                    <ListView x:Name="LBBottomList" SelectionMode="Single" CanDragItems="True" Height="500" BorderThickness="2" BorderBrush="Black" Width="400">
                         <ListView.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <ItemsStackPanel ItemsUpdatingScrollMode="KeepItemsInView" VerticalAlignment="Bottom"/>
                             </ItemsPanelTemplate>
                         </ListView.ItemsPanel>
-                        <ListView.ItemContainerStyle>
-                            <Style TargetType="CheckBox"/>
-                        </ListView.ItemContainerStyle>
-                        <!--<ListView.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                                    <CheckBox x:Name="checkbox" Content=""/>
-                                    <TextBlock x:Name="Content" />
-                                </StackPanel>
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="x:String">
+                                <CheckBox Content="{x:Bind}"/>
+                                
                             </DataTemplate>
-                        </ListView.ItemTemplate>-->
+                        </ListView.ItemTemplate>
                     </ListView>
                 </StackPanel>
             </ScrollViewer>

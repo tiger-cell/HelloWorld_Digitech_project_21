@@ -20,9 +20,9 @@
                     <CompositeTransform TranslateX="-20"/>
                 </TextBlock.RenderTransform>
            Welcome! This application is designed to improve your productivity while using your PC.
-            
+            <LineBreak/>
             Use the Notes page to save any ideas or comments you think of, so that you can come back to them later.
-            
+            <LineBreak/>
             Use the To-Do page to save a checklist of the tasks you have to do.
             </TextBlock>
         </StackPanel>

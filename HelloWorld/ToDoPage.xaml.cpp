@@ -40,8 +40,10 @@ ToDoPage::ToDoPage()
 
 void HelloWorld::ToDoPage::CreateFileButton_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-	librarytd.SaveSettings("datatd", itemInput->Text);
-	LBBottomList->Items->Append(itemInput->Text->ToString());
+    if (itemInput->Text != "") {
+        librarytd.SaveSettings("datatd", itemInput->Text);
+        LBBottomList->Items->Append(itemInput->Text->ToString());
+    }
 }
 
 void HelloWorld::ToDoPage::LoadToDoFile(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)

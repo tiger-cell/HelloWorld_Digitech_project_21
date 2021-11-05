@@ -40,9 +40,11 @@ NotesPage::NotesPage()
 
 void HelloWorld::NotesPage::CreateFileButton_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-    library.SaveSettings("data", noteInput->Text);
-    notesDisplayText->Text = noteInput->Text;
-    LBBottomList->Items->Append(notesDisplayText->Text->ToString());
+    if (noteInput->Text != "") {
+        library.SaveSettings("data", noteInput->Text);
+        notesDisplayText->Text = noteInput->Text;
+        LBBottomList->Items->Append(notesDisplayText->Text->ToString());
+    }
 
 }
 
