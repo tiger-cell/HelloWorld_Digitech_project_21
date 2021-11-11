@@ -18,8 +18,8 @@
             <TextBlock Text="Enter your notes here:" Margin="0,0,0,10" Style="{ThemeResource SubtitleTextBlockStyle}"/>
             <TextBox x:Name="noteInput" Margin="0,0,00,0" FontSize="24" AcceptsReturn="True"/>
             <StackPanel Orientation="Horizontal">
-                <Button x:Name="NewFile" Margin="0,20,0,0" VerticalAlignment="Top" Height="48" Width="186" Content="Create new file" FontSize="24" Style="{ThemeResource AccentButtonStyle}" Click="CreateFileButton_Click"/>
-                <Button x:Name="LoadFile" Margin="10,20,0,0" VerticalAlignment="Top" Height="48" Width="242" Content="Load Previous note" FontSize="24" Style="{ThemeResource AccentButtonStyle}" Click="LoadNotesFile"/>
+                <Button x:Name="NewFile" Margin="0,20,0,0" VerticalAlignment="Top" Height="48" Width="186" Content="Create new note" FontSize="24" Style="{ThemeResource AccentButtonStyle}" Click="CreateFileButton_Click"/>
+                <Button x:Name="LoadFile" Margin="10,20,0,0" VerticalAlignment="Top" Height="48" Width="242" Content="Load previous note" FontSize="24" Style="{ThemeResource AccentButtonStyle}" Click="LoadNotesFile"/>
             </StackPanel>
             <TextBlock x:Name="notesDisplayText" VerticalAlignment="Top" Height="60"/>
 
